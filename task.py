@@ -33,3 +33,12 @@ if (year%4==0) and (year!=100) or (year%400==0):
     print("True")
 else:
     print("False")
+
+
+
+num = int(input("Enter a number: "))
+i=1
+while i<=10:
+    print(num,"*",i,"=",num*i)
+    i+=1
+    
