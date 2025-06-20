@@ -1,5 +1,34 @@
-for i in range(1,11,1):
+num=int(input())
+for i in range(1,num+1,1):
     print(i,end=" ")
 print()
-for i in range(2,12,1):
-    print(i,end=" ")
+for i in range(1,11):
+    for j in range(i,i*10+1,i):
+        print(j,end=" ")
+    print()
+
+for i in range(1,3):
+    j=1
+    while j<3:
+        print(i,j)
+        j+=1
+    print("kiran")
+
+ll=[[20,30,40],[50,60,70],[80,90,100]]
+for l in ll:
+    for i in l:
+        print(i, end=" ")
+    print()  # Print a new line after each inner list
+
+# Print a square pattern of stars
+n=int(input("Enter a number: "))
+for i in range(n):
+    for j in range(i,n):
+        print("*", end="")
+    print()
+    
+
+# for i in range(n):
+#     for j in range(n):
+#         print("*",end="")
+#     print()
