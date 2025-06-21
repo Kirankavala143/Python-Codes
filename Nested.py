@@ -1,7 +1,7 @@
-num=int(input())
-for i in range(1,num+1,1):
-    print(i,end=" ")
-print()
+# num=int(input())
+# for i in range(1,num+1,1):
+#     print(i,end=" ")
+# print()
 for i in range(1,11):
     for j in range(i,i*10+1,i):
         print(j,end=" ")
@@ -21,14 +21,27 @@ for l in ll:
     print()  # Print a new line after each inner list
 
 # Print a square pattern of stars
-n=int(input("Enter a number: "))
+n=int(input("Enter the size of the square: "))
 for i in range(n):
-    for j in range(i,n):
+    for j in range(n):
         print("*", end="")
-    print()
-    
+    print()  # Print a new line after each row
 
-# for i in range(n):
-#     for j in range(n):
-#         print("*",end="")
-#     print()
+# Print a right-angled triangle pattern of stars
+n=int(input("Enter the size of the triangle: "))
+for i in range(n):
+    for j in range(i+1):
+    # for j in range(n-i): reversed triangle
+        print("*", end="")
+    print()  # Print a new line after each row
+
+# print a pyramid pattern of stars
+n=int(input("Enter the size of the pyramid: "))
+for i in range(n):
+    for j in range(n-i-1):
+        print(" ", end="")
+    for k in range(2*i+1):
+        print("*", end="")
+    print()  # Print a new line after each row
+
+
