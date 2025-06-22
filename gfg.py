@@ -1,29 +1,29 @@
 
-# def process(text):
-#     text = ''.join(e for e in text if e.isalnum() or e.isspace())
-#     text = text.strip()
-#     return text
-# result = input("Enter a text:")   
-# print(process(result)) 
+# # def process(text):
+# #     text = ''.join(e for e in text if e.isalnum() or e.isspace())
+# #     text = text.strip()
+# #     return text
+# # result = input("Enter a text:")   
+# # print(process(result)) 
 
-# count digits
-# n=int(input("Enter a number: "))
-# count = 0
-# while n>0:
-#     n=n//10
-#     count+=1
-# print("Number of digits:", count)
+# # count digits
+# # n=int(input("Enter a number: "))
+# # count = 0
+# # while n>0:
+# #     n=n//10
+# #     count+=1
+# # print("Number of digits:", count)
 
-# factorial of a number
-# import math
-# n = int(input("Enter a number: "))
-# print(math.factorial(n))
-# res=1
-# for i in range(2,n+1):
-#     res=res*i
-# print("Factorial of", n, "is", res)
+# # factorial of a number
+# # import math
+# # n = int(input("Enter a number: "))
+# # print(math.factorial(n))
+# # res=1
+# # for i in range(2,n+1):
+# #     res=res*i
+# # print("Factorial of", n, "is", res)
 
-# find gcd of two numbers
+# # find gcd of two numbers
 # a=int(input("Enter first number: "))
 # b=int(input("Enter second number: "))
 # small=min(a, b)
@@ -32,41 +32,79 @@
 #         gcd=i
 # print("GCD of", a, "and", b, "is", gcd)
 
-# find lcm of two numbers
+# # find lcm of two numbers
 # lcm = (a * b) // gcd
 # print("LCM of", a, "and", b, "is", lcm)
 
-# Check if a number is prime
-n = int(input("Enter a number: "))
-if n<=1:
-    print("Enter the number greater than 1")
-else:
-    for i in range(2,n):
-        if n%i==0:
-            print(n, "is not a prime number")
-            break
-    else:
-        print(n, "is a prime number")
+# # Check if a number is prime
+# n = int(input("Enter a number: "))
+# if n<=1:
+#     print("Enter the number greater than 1")
+# else:
+#     for i in range(2,n):
+#         if n%i==0:
+#             print(n, "is not a prime number")
+#             break
+#     else:
+#         print(n, "is a prime number")
 
-# All divisors of a number
-n = int(input("Enter a number: "))
-for i in range(1,n+1):
-    if n % i == 0:
-        print(i)
+# # All divisors of a number
+# n = int(input("Enter a number: "))
+# for i in range(1,n+1):
+#     if n % i == 0:
+#         print(i)
     
-# difference between two tables
-n1 = int(input())
-n2 = int(input())
+# # difference between two tables
+# n1 = int(input())
+# n2 = int(input())
 
-for i in range(1,11):
-    print(n1*i-n2*i,end=" ")
+# for i in range(1,11):
+#     print(n1*i-n2*i,end=" ")
 
-n = 4
-for i in range(n):
-    print("* " * n)
+# n = 4
+# for i in range(n):
+#     print("* " * n)
 
+
+s= "welcome to the world of geeks"
+def reverse_words(s):
+    words = s.split()
+    reversed_words = ' '.join(reversed(words))
+    return reversed_words
+result = reverse_words(s)
+print(result)
 
     
+# capitalize the words in a string
+def capitalize_words(s):
+    words = s.split()
+    capitalized_words = [word.capitalize() for word in words]
+    return ' '.join(capitalized_words)
+s = "hello world"
+result = capitalize_words(s)
+print(result)
 
+# Input string
+s = "welcome to the world of geeks"
+
+# Split the sentence into individual words
+words = s.split()
+
+# Create an empty list to store capitalized words
+capitalized_words = []
+
+# Capitalize the first letter of each word and add to the list
+for word in words:
+    capitalized_words.append(word.capitalize())
+
+# Join the capitalized words into a full sentence
+capitalized_sentence = ' '.join(capitalized_words)
+
+# Count the number of words
+word_count = len(words)
+
+# Print the final results
+print(capitalized_sentence)
+print(word_count)
 
 
