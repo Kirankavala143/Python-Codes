@@ -39,3 +39,4 @@ def find_smallest_missing_positive(arr):
 print(find_smallest_missing_positive([3, 4, -1, 1]))  # Output: 2
 print(find_smallest_missing_positive([1, 2, 0]))      # Output: 3
 print(find_smallest_missing_positive([7, 8, 9, 11])) 
+

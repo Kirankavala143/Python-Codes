@@ -96,7 +96,49 @@ word_count = len(words)
 print(capitalized_sentence)
 print(word_count)
 
+# elements smaller than the x
+def smaller_element(l, x):
+    res=[]
+    for i in l:
+        if i< x:
+            res.append(i)
+    return res
 
+l = [1, 2, 3, 4, 5]
+x = 3
+print(smaller_element(l, x))  # Output: [4, 5]
+
+def sum(l,x):
+    return[i for i in l if i<x]
+print(sum(l, x))  # Output: [1, 2]
+
+def num(l):
+    even=[i for i in l if i%2==0]
+    odd=[i for i in l if i%2!=0]
+    return even, odd
+l = [1, 2, 3, 4, 5, 6]
+even, odd = num(l)
+print("Even numbers:", even)  # Output: [2, 4, 6
+print("Odd numbers:", odd)    # Output: [1, 3, 5]
+
+def average(l):
+    sum=0
+    for i in l:
+        sum+=i
+    return sum/len(l)
+l = [1, 2, 3, 4, 5]
+print("Average:", average(l))  # Output: 3.0
+
+def distinct(l):
+    res=1
+    for i in range(1,len(l)):
+        if l[i] not in l[0:i]:
+            res=res+1
+    return res  
+    # return len(set(l)) 
+    
+l = [1, 2, 3, 4, 5, 1, 2]
+print("Distinct elements count:", distinct(l))  # Output: 5
 
 
 
