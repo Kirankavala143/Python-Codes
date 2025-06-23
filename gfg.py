@@ -84,27 +84,19 @@ s = "hello world"
 result = capitalize_words(s)
 print(result)
 
-# Input string
-s = "welcome to the world of geeks"
 
-# Split the sentence into individual words
-words = s.split()
-
-# Create an empty list to store capitalized words
-capitalized_words = []
-
-# Capitalize the first letter of each word and add to the list
-for word in words:
-    capitalized_words.append(word.capitalize())
-
-# Join the capitalized words into a full sentence
-capitalized_sentence = ' '.join(capitalized_words)
-
-# Count the number of words
+a="welcome to the world of geeks"
+words=a.split()
+capitalize_words=[]
+for i in words:
+    capitalize_words.append(i.capitalize())
+    
+capitalized_sentence = ' '.join(capitalize_words)
 word_count = len(words)
-
-# Print the final results
 print(capitalized_sentence)
 print(word_count)
+
+
+
 
 

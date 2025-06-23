@@ -37,3 +37,9 @@ def getfirstdigit(x):
 
 x=int(input("Enter a number: "))
 print("First digit:", getfirstdigit(x))  # Output: First digit: 1 (for example, if input is 1234)
+
+
+s="hello kiran kumar"
+print(s.split())  # Output: ['hello', 'kiran', 'kumar']
+a=s.rindex("kiran")
+print("Index of 'kiran':", a)  # Output: Index of 'k
