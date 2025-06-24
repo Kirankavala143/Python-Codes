@@ -55,3 +55,6 @@ print(n)  # This will print the first digit of the number
 s="hello"
 print(s[2::])
 
+for i in range(1,5):
+    for j in range(1,10):
+        print(i+j)

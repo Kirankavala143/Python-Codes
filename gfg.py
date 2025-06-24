@@ -153,3 +153,4 @@ print(smallest_missing_positive([3, 4, -1, 1]))  # Output: 2
 print(smallest_missing_positive([1, 2, 0]))      # Output:3
 
 
+
