@@ -136,9 +136,20 @@ def distinct(l):
             res=res+1
     return res  
     # return len(set(l)) 
-    
+
 l = [1, 2, 3, 4, 5, 1, 2]
 print("Distinct elements count:", distinct(l))  # Output: 5
 
+
+# smallest postive mising number
+def smallest_missing_positive(arr):
+    s = set(arr)  # Convert list to set for O(1) lookups
+    num = 1       # Start checking from 1
+    while True:
+        if num not in s:
+            return num  # Found the missing number!
+        num += 1        # Check next number
+print(smallest_missing_positive([3, 4, -1, 1]))  # Output: 2
+print(smallest_missing_positive([1, 2, 0]))      # Output:3
 
 
