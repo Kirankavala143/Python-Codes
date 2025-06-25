@@ -128,6 +128,11 @@ def longest_word(s):
 s = input("Enter a string: ")
 result = longest_word(s)
 print("Longest word:", result)
+
+s="hello is the kirankumar world"
+word=s.split()
+longest=max(word,key=len)
+print("Longest word:", longest)
 # Find the shortest word in a string.
 def shortest_word(s):
     words = s.split()

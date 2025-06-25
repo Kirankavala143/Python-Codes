@@ -5,12 +5,14 @@ print(unique_scores)  # sort in ascending order
 
 print(unique_scores[-2])
 
-t = int(input())
+t = int(input("enter number of test cases: "))
 for i in range(t):
     s=input()
     x=s+s
     print(x)
-t = int(input())
+
+
+t = int(input("enter number of test cases: "))
 for i in range(t):
     #Accept 2 integers inputs
     A, B = map(int,input().split())     
@@ -40,3 +42,16 @@ print(find_smallest_missing_positive([3, 4, -1, 1]))  # Output: 2
 print(find_smallest_missing_positive([1, 2, 0]))      # Output: 3
 print(find_smallest_missing_positive([7, 8, 9, 11])) 
 
+
+x = int(input())
+y = int(input())
+z = int(input())
+n = int(input())
+
+result = [[i, j, k] 
+          for i in range(x + 1) 
+          for j in range(y + 1) 
+          for k in range(z + 1) 
+          if i + j + k != n]
+
+print(result)
