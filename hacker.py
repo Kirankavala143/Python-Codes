@@ -24,7 +24,7 @@ for i in range(t):
     #Print the desired output for each test case
     print(S,P) 
 
-t = int(input())
+t = int(input("enter number of test cases: "))
 for i in range(t): 
     X, Y = map(int, input().split())
     s=X*Y
@@ -43,10 +43,10 @@ print(find_smallest_missing_positive([1, 2, 0]))      # Output: 3
 print(find_smallest_missing_positive([7, 8, 9, 11])) 
 
 
-x = int(input())
-y = int(input())
-z = int(input())
-n = int(input())
+x = int(input("enter x: "))
+y = int(input("enter y: "))
+z = int(input("enter z: "))
+n = int(input("enter n: "))
 
 result = [[i, j, k] 
           for i in range(x + 1) 
@@ -55,3 +55,7 @@ result = [[i, j, k]
           if i + j + k != n]
 
 print(result)
+
+
+
+
