@@ -57,5 +57,18 @@ result = [[i, j, k]
 print(result)
 
 
+# second largest number in a list
+def second_largest(arr):
+    first = second = float('-inf') 
 
+    for num in arr:
+        if num > first:
+            second = first
+            first = num
+        elif num > second and num != first:
+            second = num
+
+    return second if second != float('-inf') else None  # Return None if no second largest found
+arr = [2, 3, 6, 6, 5]
+print(second_largest(arr))  # Output: 5
 
