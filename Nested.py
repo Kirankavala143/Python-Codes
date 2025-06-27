@@ -59,4 +59,66 @@ for i in range(1,5):
     for j in range(1,10):
         print(i+j)
 
-# sec
+# First Non-Repeating Character
+# Find the first character in a string that does not repeat.
+# Input: "aabbcdeff" → Output: "c"
+def first_non_repeating_char(s):
+    char_count = {}
+    
+    # Count occurrences of each character
+    for char in s:
+        if char in char_count:
+            char_count[char] += 1
+        else:
+            char_count[char] = 1
+    
+    # Find the first non-repeating character
+    for char in s:
+        if char_count[char] == 1:
+            return char
+    
+    return None  # If no non-repeating character is found
+
+# Example usage
+s = "aabbcdeff"
+result = first_non_repeating_char(s)
+if result:
+    print(f"The first non-repeating character is: '{result}'")
+else:
+    print("No non-repeating character found.")
+
+
+# First Repeating Character
+def first_repeating_char(s):
+    seen = set()
+    
+    # Iterate through the string
+    for char in s:
+        # If the character is already seen, return it
+        if char in seen:
+            return char
+        # Otherwise, add it to the seen set
+        seen.add(char)
+    
+    return None  # If no repeating character is found
+# Example usage
+s = "abcdeafg"
+result = first_repeating_char(s)
+if result:
+    print(f"The first repeating character is: '{result}'")
+# Remove Vowels from a String
+
+
+# Remove Duplicate Characters from a String
+# Input: "programming" → Output: "progamin"
+def remove_duplicates(s):
+    seen=[]
+    for i in s:
+      if i not in seen:
+        seen.append(i)
+        result = ''.join(seen)
+    return result
+s = "programming"
+print("Enter a string to remove duplicates:",remove_duplicates(s))
+
+    
