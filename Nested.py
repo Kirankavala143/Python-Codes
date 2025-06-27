@@ -121,4 +121,16 @@ def remove_duplicates(s):
 s = "programming"
 print("Enter a string to remove duplicates:",remove_duplicates(s))
 
-    
+
+# Remove Vowels from a String
+def remove_vowels(s):
+    vowels = "aeiouAEIOU"
+    result = ''.join([char for char in s if char not in vowels])
+    return result
+s = "hello world"
+print("String after removing vowels:", remove_vowels(s))
+# Reverse a String
+def reverse_string(s):
+    return s[::-1]  # Using slicing to reverse the string
+s = "hello"
+print("Reversed string:", reverse_string(s))
