@@ -6,13 +6,14 @@
 # # result = input("Enter a text:")   
 # # print(process(result)) 
 
-# # count digits
-# # n=int(input("Enter a number: "))
-# # count = 0
-# # while n>0:
-# #     n=n//10
-# #     count+=1
-# # print("Number of digits:", count)
+# count digits
+# n=int(input("Enter a number: "))
+# count = 0
+# while n>0:
+#     n=n//10
+#     count+=1
+# print("Number of digits:", count)
+
 
 # # factorial of a number
 # # import math
