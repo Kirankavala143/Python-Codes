@@ -51,9 +51,34 @@ capitalized_words = [word.capitalize() for word in words]
 result = " ".join(capitalized_words)
 print(result)
 
+# to convert or mutable the string
 def fun(a,position,newchar):
     return a[:position] + newchar + a[position+1:]
 string = "kirankumar"
 position = 5
 character = 's'
 print(fun(string,position,character))
+
+# Fibonacci Sequence
+def fibonacci(n):
+    a,b=0,1
+    s=[]
+    for i in range(n):
+        s.append(a)
+        a, b = b, a + b
+    return s
+# Fibonacci Sequence
+n = 10
+fib_sequence = fibonacci(n)
+print(f"Fibonacci sequence of length {n}: {fib_sequence}")
+
+# def count_substring(string, sub_string):
+#     count = 0
+#     for i in range(len(string) - len(sub_string) + 1):
+#         if string[i:i+len(sub_string)] == sub_string:
+#             count += 1
+#     return count
+
+# string = "kirankumarkira"
+# sub_string = "kira"
+# print(count_substring(string, sub_string))
