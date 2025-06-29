@@ -82,3 +82,5 @@ print(f"Fibonacci sequence of length {n}: {fib_sequence}")
 # string = "kirankumarkira"
 # sub_string = "kira"
 # print(count_substring(string, sub_string))
+
+print(2 == 2.0)
