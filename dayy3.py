@@ -33,23 +33,39 @@ else:
     print("Not Palindrome")
 
 # Calculate factorial using recursion.
-def fact(n):
-    if n==0 or n==1:
-        return 1
-    else:
-        return n*fact(n-1)
+# def fact(n):
+#     if n==0 or n==1:
+#         return 1
+#     else:
+#         return n*fact(n-1)
     
-n=int(input("enter a number: "))
-print(fact(n))  # Output: Factorial of n
+# n=int(input("enter a number: "))
+# print(fact(n))  # Output: Factorial of n
 
-# Find the nth Fibonacci number using recursion.
-def fibonacci(n):
-    if n <= 0:
-        return 0
-    elif n == 1:
-        return 1
+# # Find the nth Fibonacci number using recursion.
+# def fibonacci(n):
+#     a,b=0,1
+#     for _ in range(n):
+#         a, b = b, a + b
+#     return a
+# # Example usage
+# n = int(input("Enter the position of Fibonacci number: "))
+# print(f"The {n}th Fibonacci number is: {fibonacci(n)}")  # Output: Fibonacci number at position n
+# def fibonacci(n):
+#     if n <= 0:
+#         return 0
+#     elif n == 1:
+#         return 1
+#     else:
+#         return fibonacci(n-1) + fibonacci(n-2)
+# n = int(input("Enter the position of Fibonacci number: "))
+# print(f"The {n}th Fibonacci number is: {fibonacci(n)}")  #  
+
+# Reverse a string using recursion.
+def reverse_string(s):
+    if len(s) == 0:
+        return s
     else:
-        return fibonacci(n-1) + fibonacci(n-2)
-n = int(input("Enter the position of Fibonacci number: "))
-print(f"The {n}th Fibonacci number is: {fibonacci(n)}")  #  
-# Output: Fibonacci number at position n
+        return s[-1] + reverse_string(s[:-1])
+s = input("Enter a string to reverse: ")
+print(f"Reversed string: {reverse_string(s)}")  # Output: Reversed
