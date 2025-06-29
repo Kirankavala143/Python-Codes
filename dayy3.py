@@ -69,3 +69,7 @@ def reverse_string(s):
         return s[-1] + reverse_string(s[:-1])
 s = input("Enter a string to reverse: ")
 print(f"Reversed string: {reverse_string(s)}")  # Output: Reversed
+
+# string of s
+# s = input("Enter a string to reverse: ")
+# print(f"Reversed string: {reverse_string(s)}")
