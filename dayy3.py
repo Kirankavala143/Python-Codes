@@ -130,3 +130,37 @@ print(s)
 s.sort(reverse=True)
 print(s)
 
+# Create a tuple and access its elements.
+t=(1,2,3,4,5)
+print(t[0])
+print(t[1])
+print(t[2])
+print(t[3])
+print(t[4])
+
+# Unpack a tuple into variables.
+a,b,c,d,e=t
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+
+# Convert a list to a tuple and vice versa.
+l=[1,2,3,4,5]
+t=tuple(l)
+print(t)
+l=list(t)
+print(l)
+
+# Create a list of tuples and sort it based on the second element.
+l=[(1,2),(3,4),(5,6)]
+l.sort(key=lambda x: x[1])
+print(l)
+
+# Write a function that takes a tuple and returns a reversed tuple.
+def reverse_tuple(t):
+    return tuple(reversed(t))
+t=(1,2,3,4,5)
+print(reverse_tuple(t))
+
