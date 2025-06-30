@@ -164,3 +164,7 @@ def reverse_tuple(t):
 t=(1,2,3,4,5)
 print(reverse_tuple(t))
 
+
+s=(1,2,3,4,8,9)
+print(max(s))
+print(min(s))
