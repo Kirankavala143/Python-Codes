@@ -127,6 +127,5 @@ for i in sorted(student_data):
 
 
 
-student={"name":"kiran","marks":78}
-print(student)
-
+list1=list(map(int,input("etn:").split()))
+print(list1)

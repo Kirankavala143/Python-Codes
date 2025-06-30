@@ -168,3 +168,29 @@ print(reverse_tuple(t))
 s=(1,2,3,4,8,9)
 print(max(s))
 print(min(s))
+
+# *
+# * *
+# * * *
+# * * * *
+for i in range(1,5):
+    for j in range(1,i+1):
+        print("*",end=" ")
+    print()
+
+
+# Write a program to print a multiplication table for numbers 1 to 5 using nested loops.
+for i in range(1,6):
+    for j in range(1,6):
+        print(i*j,end=" ")
+    print()
+
+shuffle=" "
+for i in range(1,11):
+    shuffle=shuffle +str(i) + " "
+    print(shuffle)
+
+for i in range(1,6):
+    print("* "*i)
+
+
