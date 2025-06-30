@@ -159,38 +159,56 @@ l.sort(key=lambda x: x[1])
 print(l)
 
 # Write a function that takes a tuple and returns a reversed tuple.
-def reverse_tuple(t):
-    return tuple(reversed(t))
-t=(1,2,3,4,5)
-print(reverse_tuple(t))
+# def reverse_tuple(t):
+#     return tuple(reversed(t))
+# t=(1,2,3,4,5)
+# print(reverse_tuple(t))
 
 
-s=(1,2,3,4,8,9)
-print(max(s))
-print(min(s))
+# s=(1,2,3,4,8,9)
+# print(max(s))
+# print(min(s))
 
-# *
-# * *
-# * * *
-# * * * *
-for i in range(1,5):
-    for j in range(1,i+1):
-        print("*",end=" ")
-    print()
-
-
-# Write a program to print a multiplication table for numbers 1 to 5 using nested loops.
-for i in range(1,6):
-    for j in range(1,6):
-        print(i*j,end=" ")
-    print()
-
-shuffle=" "
-for i in range(1,11):
-    shuffle=shuffle +str(i) + " "
-    print(shuffle)
-
-for i in range(1,6):
-    print("* "*i)
+# # *
+# # * *
+# # * * *
+# # * * * *
+# for i in range(1,5):
+#     for j in range(1,i+1):
+#         print("*",end=" ")
+#     print()
 
 
+# # Write a program to print a multiplication table for numbers 1 to 5 using nested loops.
+# for i in range(1,6):
+#     for j in range(1,6):
+#         print(i*j,end=" ")
+#     print()
+
+# shuffle=" "
+# for i in range(1,11):
+#     shuffle=shuffle +str(i) + " "
+#     print(shuffle)
+
+# s={1,2,3,4,5}
+# # add 10
+# s.add(10)
+# print(s)
+# s.remove(3)
+# print(s)
+
+# a,b=map(int,input().split())
+# if a<b:
+#     print("a < b")
+# elif a>b:
+#     print("a > b")
+# else:
+#     print("a == b")
+
+
+# n, k = map(int, input().split())
+# print(k % n)
+
+n=int(input())
+k=int(input())
+print(k%n)

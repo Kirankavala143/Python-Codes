@@ -129,3 +129,7 @@ for i in sorted(student_data):
 
 list1=list(map(int,input("etn:").split()))
 print(list1)
+
+# Cube using lambda
+cube=lambda x:x**3
+print(cube(3))
