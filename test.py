@@ -54,6 +54,7 @@ if d > 0:
 tot = score + bonus
 print(tot)
 
+
 # 3 Armstrong number
 # num=int(input("enter a number:"))
 # original_num=num
@@ -125,11 +126,11 @@ print(tot)
 #         count+=1
 # print(count)
 
-# import math
-# A = int(input())
-# B = int(input())
-# count = math.floor(math.sqrt(B)) - math.ceil(math.sqrt(A)) + 1
-# print(count)
+import math
+A = int(input())
+B = int(input())
+count = math.floor(math.sqrt(B)) - math.ceil(math.sqrt(A)) + 1
+print(count)
 
 # 7 odd,even
 
@@ -165,8 +166,14 @@ print(tot)
 # print(list)
 
 # 10 add new key value
-Student_dict={ "Ram" : "Cricket",  "Naresh":"Football", "Vani":"Tennis", "Rahim":"Cricket"}
-keys,values=input().split()
-Student_dict[keys] = values
-print(Student_dict)
+# Student_dict={ "Ram" : "Cricket",  "Naresh":"Football", "Vani":"Tennis", "Rahim":"Cricket"}
+# keys,values=input().split()
+# Student_dict[keys] = values
+# print(Student_dict)
   
+# Leap Year Checker
+n=int(input())
+if n%4==0 and n%100!=0 or n%400==0:
+    print("leap year")
+else:
+    print("not a leap year")
