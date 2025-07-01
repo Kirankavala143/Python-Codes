@@ -110,3 +110,16 @@ def find(n):
 
 n=int(input())
 print("Enter a number to check if it is prime:",find(n))
+
+
+# 1 write a program to print the sum of the cubes of the numbers from M to N
+
+def sum_of_cubes(m,n):
+    sum=0
+    for i in range(m,n+1):
+        sum+=i**3
+    return sum
+
+m=int(input())
+n=int(input())
+print(sum_of_cubes(m,n))    
