@@ -43,3 +43,7 @@ s="hello kiran kumar"
 print(s.split())  # Output: ['hello', 'kiran', 'kumar']
 a=s.rindex("kiran")
 print("Index of 'kiran':", a)  # Output: Index of 'k
+
+b=s.find("kiran")
+print("Index of 'kiran':", b)
+
