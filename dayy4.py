@@ -51,7 +51,7 @@ s1={2,3,4,5,6}
 print(s.symmetric_difference(s1))
 
 # Project: Student Gradebook
-
+5
 # Store student data in a dictionary.
 student_data={
     "student1":{

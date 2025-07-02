@@ -47,3 +47,9 @@ print("Index of 'kiran':", a)  # Output: Index of 'k
 b=s.find("kiran")
 print("Index of 'kiran':", b)
 
+
+# input a dictionary
+
+
+a=int(input())
+b=int(input())
