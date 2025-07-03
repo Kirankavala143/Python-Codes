@@ -53,3 +53,5 @@ print("Index of 'kiran':", b)
 
 a=int(input())
 b=int(input())
+
+
