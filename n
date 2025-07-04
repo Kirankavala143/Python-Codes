@@ -1,0 +1,55 @@
+ 1. Introduction to Python
+Q: Write a program that takes multiline input from the user until an empty line is entered and then prints each line in reverse order.
+
+🔵 2. Data Types
+Q: Given a string representing a mathematical expression (e.g., "3 + 5 * 2 - 8 / 4"), evaluate the result without using eval().
+
+🔵 3. Variables and Constants
+Q: Write a program that swaps two variables without using a third variable or arithmetic operations.
+
+🔵 4. Type Casting / Type Conversion
+Q: Convert a nested list of mixed data types (e.g., ["1", 2.0, "3.5", [4, "5"]]) into a flat list of integers only. Ignore values that cannot be converted.
+
+🔵 5. Operators
+Q: Without using built-in comparison operators (<, >, ==, etc.), write a function that checks whether two integers are equal.
+
+🔵 6. Conditional Statements
+Q: Write a program that simulates a basic calculator supporting +, -, *, /, and % operators using if, elif, and else.
+
+🔵 7. Loops
+Q: Print all the prime numbers between 2 and N, but stop printing when a number is divisible by the sum of its digits.
+
+🔵 8. Pattern Printing
+Q: Print a hollow diamond pattern of stars for a given odd number of rows.
+
+markdown
+Copy
+Edit
+   *  
+  * *  
+ *   *  
+  * *  
+   *
+🔵 9. Functions
+Q: Write a recursive function to convert a decimal number into its binary representation without using built-in functions.
+
+🟡 10. Data Structures
+🔹 Lists
+Q: Rotate a list k steps to the right in-place (without using extra space).
+
+🔹 Tuples
+Q: Given a list of tuples, sort them based on the sum of elements in each tuple.
+
+🔹 Sets
+Q: Write a function to find all elements that appear in at least two out of three given lists.
+
+🔹 Dictionaries
+Q: Write a program to group anagrams from a list of strings using a dictionary.
+
+🔹 List Comprehensions
+Q: Write a list comprehension to generate all palindromic numbers between 10 and 200.
+
+🟡 11. String Manipulation
+Q: Given a string, find the longest substring without repeating characters.
+
+Would you like the answers or hints for any of these questions? Or do you want to try solving them one by one?

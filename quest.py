@@ -138,3 +138,10 @@ for i in l:
     elif i >second and i!=first:
         second=i
 print(second)
+
+# Find the Second Smallest Number in a List
+# Input: [1, 2, 3, 4, 5] →  
+# Output: 2
+l = [1, 2, 3, 4, 5]
+l.sort()    
+print(l[1])

@@ -45,3 +45,8 @@ else:
     while current_num <= upper_bound:
         print(current_num, end=" ")
         current_num += 2
+
+# # for loop to print reverse of numbers
+# n = int(input("Enter a number: "))
+# for i in range(n, 0, -1):
+#     print(i, end=" ")
