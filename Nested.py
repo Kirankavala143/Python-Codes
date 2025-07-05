@@ -28,21 +28,21 @@
 #     print()  # Print a new line after each row
 
 # # Print a right-angled triangle pattern of stars
-# n=int(input("Enter the size of the triangle: "))
-# for i in range(n):
-#     for j in range(i+1):
-#     # for j in range(n-i): reversed triangle
-#         print("*", end="")
-#     print()  # Print a new line after each row
+n=int(input("Enter the size of the triangle: "))
+for i in range(n):
+    for j in range(i+1):
+    # for j in range(n-i): reversed triangle
+        print("*", end="")
+    print()  # Print a new line after each row
 
-# # print a pyramid pattern of stars
-# n=int(input("Enter the size of the pyramid: "))
-# for i in range(n):
-#     for j in range(n-i-1):
-#         print(" ", end="")
-#     for k in range(2*i+1):
-#         print("*", end="")
-#     print()  # Print a new line after each row
+# print a pyramid pattern of stars
+n=int(input("Enter the size of the pyramid: "))
+for i in range(n):
+    for j in range(n-i-1):
+        print(" ", end="")
+    for k in range(2*i+1):
+        print("*", end="")
+    print()  # Print a new line after each row
 
 
 n=123
