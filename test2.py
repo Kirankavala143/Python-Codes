@@ -75,3 +75,13 @@ c=a%4
 print("Quotient:", b)
 print("Remainder:", c)
 
+# lcm of 2 numbers
+def gcd(x, y):
+    while y:  
+        x, y = y, x % y
+    return x
+def lcm(x, y):
+    return x * y // gcd(x, y)
+x = int(input("Enter the first number: "))
+y = int(input("Enter the second number: "))
+print("The LCM of", x, "and", y, "is", lcm(x, y))
