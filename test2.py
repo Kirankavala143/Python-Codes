@@ -54,17 +54,24 @@
 #     print(f"{n} is not a Palindrome number")
 
 # perfect number
-def is_perfect_number(n):
-    if n < 1:
-        return False
-    divisors = []         
-    for i in range(1, n):
-        if n % i == 0:
-            divisors.append(i)             
-    return sum(divisors) == n
+# def is_perfect_number(n):
+#     if n < 1:
+#         return False
+#     divisors = []         
+#     for i in range(1, n):
+#         if n % i == 0:
+#             divisors.append(i)             
+#     return sum(divisors) == n
 
-n = int(input("Enter a number: "))
-if is_perfect_number(n):
-    print(f"{n} is a Perfect number")    
-else:
-    print(f"{n} is not a Perfect number")
+# n = int(input("Enter a number: "))
+# if is_perfect_number(n):
+#     print(f"{n} is a Perfect number")    
+# else:
+#     print(f"{n} is not a Perfect number")
+
+a=int(input("Enter a number: "))
+b=a//4
+c=a%4
+print("Quotient:", b)
+print("Remainder:", c)
+
