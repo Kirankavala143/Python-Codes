@@ -91,8 +91,9 @@ a=s.split()
 print(" ".join(a[::-1]))
 
 # find length of last word
-# a="hello world"
-# b=a.split()
+a="hello world"
+b=a.split()
+print(b)
 def length_of_last_word(s):
     words = s.split()
     if not words:
