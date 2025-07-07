@@ -69,19 +69,46 @@
 # else:
 #     print(f"{n} is not a Perfect number")
 
-a=int(input("Enter a number: "))
-b=a//4
-c=a%4
-print("Quotient:", b)
-print("Remainder:", c)
+# a=int(input("Enter a number: "))
+# b=a//4
+# c=a%4
+# print("Quotient:", b)
+# print("Remainder:", c)
 
-# lcm of 2 numbers
-def gcd(x, y):
-    while y:  
-        x, y = y, x % y
-    return x
-def lcm(x, y):
-    return x * y // gcd(x, y)
-x = int(input("Enter the first number: "))
-y = int(input("Enter the second number: "))
-print("The LCM of", x, "and", y, "is", lcm(x, y))
+# # lcm of 2 numbers
+# def gcd(x, y):
+#     while y:  
+#         x, y = y, x % y
+#     return x
+# def lcm(x, y):
+#     return x * y // gcd(x, y)
+# x = int(input("Enter the first number: "))
+# y = int(input("Enter the second number: "))
+# print("The LCM of", x, "and", y, "is", lcm(x, y))
+
+s="kiran kumar"
+a=s.split()
+print(" ".join(a[::-1]))
+
+# find length of last word
+# a="hello world"
+# b=a.split()
+def length_of_last_word(s):
+    words = s.split()
+    if not words:
+        return 0
+    return len(words[-1])
+print("Length of last word:", length_of_last_word(a))
+
+# find length of last word without using split
+def length_of_last_word_no_split(s):
+    length = 0
+    found_char = False
+    for char in reversed(s):
+        if char != ' ':
+            found_char = True
+            length += 1
+        elif found_char:
+            break
+    return length        
+print("Length of last word:", length_of_last_word_no_split(a))
