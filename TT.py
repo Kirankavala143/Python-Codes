@@ -13,12 +13,17 @@
 # print(count)
 
 # sum of digits
-n=int(input("Enter a number:"))
-s=abs(n)
+# n=int(input("Enter a number:"))
+# total = 0
+# while n > 0:
+#     total += n % 10  # Add the last digit to the total
+#     n //= 10  # Remove the last digit
+# print(total)
+
+
+n=int(input("Enter a number: "))
+n=str(abs(n))
 sum=0
-for i in range(s):
-    s=s//10
-    sum+=i
+for i in n:
+    sum+=int(i)
 print(sum)
-
-
