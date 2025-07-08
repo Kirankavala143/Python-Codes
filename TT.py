@@ -50,3 +50,11 @@ rev = 0
 for i in str(n):            
     rev = rev * 10 + int(i)            
 print(rev)            
+
+# Reverse a number using recursion
+def reverse_number(n):
+    if n == 0:        
+        return 0    
+    else:        
+        return n % 10 + reverse_number(n // 10)
+print(reverse_number(123))        

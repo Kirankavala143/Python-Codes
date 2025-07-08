@@ -113,3 +113,10 @@ def length_of_last_word_no_split(s):
             break
     return length        
 print("Length of last word:", length_of_last_word_no_split(a))
+
+
+# white space removal
+def remove_whitespace(s):
+    return ''.join(s.split())
+print("After removing whitespace:", remove_whitespace(a))   
+
