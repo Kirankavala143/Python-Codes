@@ -1,6 +1,6 @@
-def factorial(n):
-    if n == 0:    
-        return 1          
-    else:        
-        return n * factorial(n-1)
-print(factorial(5))           
+a = [1, 2, 3]
+b = a # c = a[:]
+c = a[:]
+print(a is b) # Output: True
+print(a is c) # Output: False 
+print(a == c) # Output: True  
