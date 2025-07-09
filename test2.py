@@ -120,3 +120,7 @@ def remove_whitespace(s):
     return ''.join(s.split())
 print("After removing whitespace:", remove_whitespace(a))   
 
+# remove all spaces from a string
+def remove_all_spaces(s):   
+    return ''.join(s.split())                       
+print("After removing all spaces:", remove_all_spaces(a))                   
