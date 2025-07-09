@@ -18,3 +18,55 @@
 # num = 0o123   # 83 in octal
 # num = 0x123   # 291 in hexadecimal        
 
+# Explain operator precedence and associativity with an example.
+# Operator precedence determines the order in which operators are evaluated in an expression.
+# Associativity determines whether an operator is evaluated from left to right or right to left.    
+
+# What will a = b = 5 and a += 1 do? Will b change?
+# a = b = 5 assigns the value 5 to both variables a and b.
+# a += 1 increments the value of a by 1, effectively adding 1 to its current value.
+# Therefore, the result will be a = 6, and b will still be 5.
+
+# What is the difference between x and y and x & y?
+# x and y are variables that can hold any value, while x & y is a bitwise AND operation that performs a logical AND on the binary representations of x and y.
+
+# Why does 3 < 2 < 1 return False in Python?
+# In Python, the expression 3 < 2 < 1 is evaluated as (3 < 2) and (2 < 1).
+# The second comparison (2 < 1) returns False, so the overall expression returns False. 
+
+# Write a nested loop to print Pascal’s Triangle.
+def print_pascals_triangle(n):
+    for i in range(n):
+        # Print leading spaces
+        print(' ' * (n - i), end='')
+        
+        # Calculate and print the values in the row
+        value = 1
+        for j in range(i + 1):
+            print(value, end=' ')
+            value = value * (i - j) // (j + 1)
+        
+        print()  # Move to the next line
+
+# Example usage
+n = 5
+print_pascals_triangle(n)
+
+# Find the longest palindromic substring using only loops and if/else.
+def longest_palindromic_substring(s):
+    max_length = 0
+    longest_palindrome = ""
+    
+    for i in range(len(s)):
+        for j in range(i, len(s)):
+            substring = s[i:j + 1]
+            if substring == substring[::-1]:  # Check if the substring is a palindrome
+                if len(substring) > max_length:
+                    max_length = len(substring)
+                    longest_palindrome = substring
+                    
+    return longest_palindrome
+
+# Example usage
+s = "racecarfdghgfedcbracecar"
+print(longest_palindromic_substring(s))
