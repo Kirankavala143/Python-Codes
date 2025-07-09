@@ -99,20 +99,30 @@ n=5
 #     print()
 
 #butterfly
-for i in range(n):
-    for j in range(i+1):
-        print("*",end=" ")
-    for j in range(i,n-1):
-        print("*",end=" ")
-    print()
+# for i in range(n):
+#     for j in range(i+1):
+#         print("*",end=" ")
+#     for j in range(i,n-1):
+#         print("*",end=" ")
+#     print()
 
 # left pascal triangle
+for i in range(n):
+    for j in range(n-i):
+        print(" ",end="")
+    for j in range(i+1):
+        print("*",end=" ")
+    print()   
 
-
-
-
-
-
+# Hollow Square Pattern
+n = int(input("Enter the row size for the pattern: "))
+for i in range(1,n+ 1):  # Outer loop for rows
+    for j in range(1,n+ 1):  # Inner loop for columns
+        if i == 1 or i == n or j == 1 or j == n :  # Print star only on borders
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")  # Print space inside
+    print()
 
 
 
