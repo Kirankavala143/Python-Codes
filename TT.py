@@ -58,3 +58,10 @@ def reverse_number(n):
     else:        
         return n % 10 + reverse_number(n // 10)
 print(reverse_number(123))        
+
+# Reverse a string using recursion
+def reverse_string(s):  
+    if len(s) == 0:        
+        return s    
+    else:        
+        return s[-1] + reverse_string(s[:-1])
