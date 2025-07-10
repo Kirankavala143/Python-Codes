@@ -45,23 +45,62 @@ print(factorial(5))
 # print(rev)
 
 # for loop reverse a number
-n = int(input("Enter a number: "))
-rev = 0        
-for i in str(n):            
-    rev = rev * 10 + int(i)            
-print(rev)            
+# n = int(input("Enter a number: "))
+# rev = 0        
+# for i in str(n):            
+#     rev = rev * 10 + int(i)            
+# print(rev)            
 
-# Reverse a number using recursion
-def reverse_number(n):
-    if n == 0:        
-        return 0    
-    else:        
-        return n % 10 + reverse_number(n // 10)
-print(reverse_number(123))        
+# # Reverse a number using recursion
+# def reverse_number(n):
+#     if n == 0:        
+#         return 0    
+#     else:        
+#         return n % 10 + reverse_number(n // 10)
+# print(reverse_number(123))        
 
 # Reverse a string using recursion
-def reverse_string(s):  
-    if len(s) == 0:        
-        return s    
-    else:        
-        return s[-1] + reverse_string(s[:-1])
+# def reverse_string(s):  
+#     if len(s) == 0:        
+#         return s    
+#     else:        
+#         return s[-1] + reverse_string(s[:-1])
+# print(reverse_string("hello"))
+
+
+#  Given a string representing a mathematical expression (e.g., "3 + 5 * 2 - 8 / 4"), evaluate the result without using eval().
+def evaluate_expression(expression):
+    tokens = expression.split()
+    total=0
+    current_number = 0
+    operation = '+'
+
+    for i in tokens:
+        if i.isdigit():
+            current_number = int(i)
+        else:
+            if operation == '+':
+                total += current_number
+            elif operation == '-':
+                total -= current_number
+            elif operation == '*':
+                total *= current_number
+            elif operation == '/':
+                total /= current_number
+            
+            operation = i
+# Apply the last number
+    if operation == '+':
+        total += current_number 
+    elif operation == '-':
+        total -= current_number 
+    elif operation == '*':
+        total *= current_number 
+    elif operation == '/':
+        total /= current_number
+
+    return total    
+
+expression = "3 + 5 * 2 - 8 / 4"        
+result = evaluate_expression(expression)
+print("Result:", result)    
