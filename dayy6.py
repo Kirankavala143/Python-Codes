@@ -16,4 +16,9 @@ print(3 in a)
 # Sorting a list using built-in sort
 a=[1,2,7,5,9,4,3,9,10]
 a.sort()
-print(a)
+print(a) 
+
+# Time Complexity Analysis
+# 1. Creating an array: O(n)
+# 2. Reversing an array: O(n)
+      
