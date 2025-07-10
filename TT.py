@@ -193,4 +193,5 @@ else:
     print("No multiples of 3 found")
 
 
+
 # Q: Print a hollow diamond pattern of stars for a given odd number of rows.

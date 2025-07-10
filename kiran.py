@@ -32,3 +32,34 @@
 # count = 0
 # total = 0
 # while count < n:
+
+# def second_highest_unique(*args):
+#     unique_nums = list(set(args))  # remove duplicates
+
+#     if len(unique_nums) < 2:
+#         return "Not enough unique numbers"
+    
+#     unique_nums.sort()
+#     return unique_nums[-2]  # second largest
+
+# # Taking input
+# numbers = list(map(int, input().split()))
+# print(second_highest_unique(*numbers))
+
+def compute_product(numbers):
+    product = 1
+    
+    def multiply(num):
+        nonlocal product
+        product *= num
+    
+    for i in numbers:
+        multiply(i)
+    
+    return product
+
+# Reading input
+nums = list(map(int, input().split()))
+
+# Output result
+print(compute_product(nums))
