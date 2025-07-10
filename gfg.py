@@ -122,6 +122,7 @@ even, odd = num(l)
 print("Even numbers:", even)  # Output: [2, 4, 6
 print("Odd numbers:", odd)    # Output: [1, 3, 5]
 
+
 def average(l):
     sum=0
     for i in l:
@@ -189,6 +190,5 @@ def frequency_count(s):
 s = "hello world"
 result = frequency_count(s)
 print(result)
-
 
 

@@ -172,4 +172,25 @@ def print_primes_comprehension(N):
 N = int(input("Enter a number: "))
 print_primes_comprehension(N)
 
-# Q: Print all the prime numbers between 2 and N using a function
+
+#  Print all the prime numbers between 2 and N, but stop printing when a number is divisible by the sum of its digits.
+n=int(input("Enter a number: "))
+def sum_of_digits(num):
+    return sum(int(digit) for digit in str(num))
+for i in range(2,n+1):
+    if i%sum_of_digits(i)==0:
+        break
+    else:
+        print(i)    
+
+
+nums = list(map(int, input().split()))
+multiples_of_3 = list(filter(lambda x: x % 3 == 0, nums))
+
+if multiples_of_3:
+    print(*multiples_of_3)
+else:
+    print("No multiples of 3 found")
+
+
+# Q: Print a hollow diamond pattern of stars for a given odd number of rows.

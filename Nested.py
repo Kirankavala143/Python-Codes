@@ -134,3 +134,15 @@ def reverse_string(s):
     return s[::-1]  # Using slicing to reverse the string
 s = "hello"
 print("Reversed string:", reverse_string(s))
+
+# average of numbers by taking input from user
+n=map(int, input("Enter the number of elements: ").split())
+total = 0
+n = int(input("Enter the number of elements: "))                
+
+
+total = 0
+for i in range(n):
+    num = int(input(f"Enter number {i+1}: "))
+    total += num
+average = total / n

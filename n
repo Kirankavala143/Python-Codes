@@ -17,8 +17,7 @@ Q: Without using built-in comparison operators (<, >, ==, etc.), write a functio
 Q: Write a program that simulates a basic calculator supporting +, -, *, /, and % operators using if, elif, and else.
 
 🔵 7. Loops
-Q: Print all the prime numbers between 2 and N, but stop printing when a number is divisible by the sum of its digits.
-
+Q: Prinwede
 🔵 8. Pattern Printing
 Q: Print a hollow diamond pattern of stars for a given odd number of rows.
 
