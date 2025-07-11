@@ -48,27 +48,53 @@
 # print(rev)
 
 # recursive reverse of a number
-def reverse_number(n, rev=0):
-    if n == 0:
-        return rev
-    else:
-        return reverse_number(n // 10, rev * 10 + n % 10)
+# def reverse_number(n, rev=0):
+#     if n == 0:
+#         return rev
+#     else:
+#         return reverse_number(n // 10, rev * 10 + n % 10)
 
-# Example usage
-n = int(input("Enter a number: "))
-print("Reversed number:", reverse_number(n))
+# # Example usage
+# n = int(input("Enter a number: "))
+# print("Reversed number:", reverse_number(n))
 
 # reverse a integer using recursion strings
-def reverse_string(n):
-    if len(n) == 0:
-        return n
-    else:
-        return n[-1] + reverse_string(n[:-1])
+# def reverse_string(n):
+#     if len(n) == 0:
+#         return n
+#     else:
+#         return n[-1] + reverse_string(n[:-1])
 
-# Example usage
-n= input("Enter a string: ")
-n=str(n)  # Ensure n is a string
-s = reverse_string(n)
-print("Reversed string:", reverse_string(n))
+# # Example usage
+# n= input("Enter a string: ")
+# n=str(n)  # Ensure n is a string
+# print("Reversed string:", reverse_string(n))
 
+# find first repeated character in a string and its second occurrence
+# def first_repeated_char(s):
+#     seen = {}
+#     for index, char in enumerate(s):
+#         if char in seen:
+#             print(f"First repeated character: '{char}'")
+#             print(f"Second occurrence at index: {index}")
+#             return
+#         else:
+#             seen[char] = index
+#     print("No repeated characters found.")
 
+# # Example usage:
+# s = "abcaadb"
+# first_repeated_char(s)
+
+def first_repeated_char(s):
+    seen = set()  # Step 1
+    for i in range(len(s)):  # Step 2
+        if s[i] in seen:  # Step 3
+            print("First repeated character:", s[i])  # Step 4
+            print("Second occurrence at index:", i)  # Step 5
+            return  # Step 6
+        seen.add(s[i])  # Step 7
+    print("No repeated characters found.")  # Step 8
+
+s = "abcaadb"
+first_repeated_char(s)
