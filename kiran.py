@@ -46,20 +46,40 @@
 # numbers = list(map(int, input().split()))
 # print(second_highest_unique(*numbers))
 
-def compute_product(numbers):
-    product = 1
+# def compute_product(numbers):
+#     product = 1
     
-    def multiply(num):
-        nonlocal product
-        product *= num
+#     def multiply(num):
+#         nonlocal product
+#         product *= num
     
-    for i in numbers:
-        multiply(i)
+#     for i in numbers:
+#         multiply(i)
     
-    return product
+#     return product
 
-# Reading input
+# # Reading input
+# nums = list(map(int, input().split()))
+
+# # Output result
+# print(compute_product(nums))
+
+# Global list to store running totals
+total_list = []
+
+def add_to_total(n):
+    global total_list
+    if not total_list:
+        total_list.append(n)
+    else:
+        total_list.append(total_list[-1] + n)
+
+# Read input
 nums = list(map(int, input().split()))
 
-# Output result
-print(compute_product(nums))
+# Process each number
+for i in nums:
+    add_to_total(i)
+
+# Print the result
+print(*total_list)
