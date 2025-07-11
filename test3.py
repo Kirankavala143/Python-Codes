@@ -21,3 +21,24 @@
 # num = int(input("Enter a number: "))
 # print("Sum of digits:", sum_of_digits(num))
 
+# a to the power b
+def power(a, b):
+    if b == 0:
+        return 1
+    else:
+        return a **b
+
+# #  Example usage
+base = int(input("Enter the base: "))
+exponent = int(input("Enter the exponent: "))
+print(f"{base} raised to the power of {exponent} is: {power(base, exponent)}")
+
+# anothwer way to find power
+def power(a, b):
+    return a ** b 
+# Example usage
+base = int(input("Enter the base: "))
+exponent = int(input("Enter the exponent: ")) 
+print(f"{base} raised to the power of {exponent} is: {power(base, exponent)}")
+
+# reverse a string
