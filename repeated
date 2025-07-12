@@ -1,0 +1,61 @@
+First Non-Repeating Character
+
+Input: "leetcode"
+
+Output: 'l' (index 0)
+
+First Repeating Character
+
+Input: "hello"
+
+Output: 'l' (index 2 — second occurrence)
+
+Find All Non-Repeating Characters
+
+Input: "aabbcdeffg"
+
+Output: ['c', 'd', 'e', 'g']
+
+Find All Repeating Characters
+
+Input: "successes"
+
+Output: ['s', 'c', 'e']
+
+🔁 Sliding Window / Substring Problems
+Longest Substring Without Repeating Characters
+
+Input: "abcabcbb"
+
+Output: 3 → "abc"
+
+Length of Longest Substring With Repeating Characters
+
+Input: "aabbbccd"
+
+Output: 3 → "bbb"
+
+Longest Substring With At Most 2 Distinct Characters
+
+Input: "eceba"
+
+Output: 3 → "ece"
+
+Check if a String Has All Unique Characters
+
+Input: "abcdef"
+
+Output: True
+
+🔡 Character Frequency Based
+Character with Maximum Frequency
+
+Input: "banana"
+
+Output: 'a' → appeared 3 times
+
+Rearrange String to Avoid Adjacent Repeats
+
+Input: "aaabc"
+
+Output: "abaca" (or any valid)

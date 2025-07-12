@@ -1,0 +1,101 @@
+Python Learning Roadmap
+🔹 1. Python Basics
+Variables, Data Types
+
+Input/Output
+
+Operators
+
+Conditional Statements (if, elif, else)
+
+Loops (for, while)
+
+Functions & Recursion
+
+String Manipulation
+
+Basic List, Tuple, Set, Dictionary usage
+
+🔹 2. Python Intermediate
+List/Dict Comprehensions
+
+Lambda, map(), filter(), reduce()
+
+Exception Handling
+
+File Handling
+
+Built-in Modules (math, random, datetime, etc.)
+
+Basic OOP (Classes, Objects, __init__, self)
+
+*args and **kwargs
+
+Modules & Packages
+
+🔹 3. Python Advanced
+Object-Oriented Programming (Inheritance, Polymorphism, Encapsulation)
+
+Decorators
+
+Generators and Iterators
+
+Regular Expressions
+
+Context Managers (with statement)
+
+Multithreading & Multiprocessing
+
+Working with APIs (using requests)
+
+JSON Handling
+
+Virtual Environments and pip
+
+🔢 DSA Roadmap (in Python)
+🔹 4. DSA Fundamentals
+Time & Space Complexity
+
+Arrays & Strings
+
+Recursion & Backtracking
+
+Sorting & Searching
+
+Hashing (using dictionaries/sets)
+
+Stack & Queue (List, deque)
+
+🔹 5. DSA Intermediate
+Linked Lists (Singly, Doubly)
+
+Trees (Binary Tree, BST)
+
+Binary Search (Applications)
+
+Heaps & Priority Queue
+
+Sliding Window Technique
+
+Two Pointers Technique
+
+Prefix Sum / Difference Array
+
+HashMaps in depth
+
+🔹 6. DSA Advanced
+Graphs (DFS, BFS, Dijkstra, Union-Find)
+
+Dynamic Programming (Top-down & Bottom-up)
+
+Greedy Algorithms
+
+Tries
+
+Segment Trees & Fenwick Trees (Advanced)
+
+Backtracking (N-Queens, Sudoku Solver, etc.)
+
+Advanced String Algorithms (KMP, Rabin-Karp)
+
+Bit Manipulation Tricks

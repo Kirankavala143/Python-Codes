@@ -287,4 +287,12 @@ print("Sum of Fibonacci series:", fibonacci_sum(n))
 # n2 = int(input("Enter the end of the range: "))
 # fibonacci_range(n1, n2)
 
-# l
+s= "hello world"
+squares = [x**2 for x in range(10)]
+word_count = {char: s.count(char) for char in set(s)}
+print("Squares:", squares)
+print("Word count:", word_count)
+
+s="hello world"
+word_count={char: s.count(char) for char in set(s)}
+print("Word count:", word_count)

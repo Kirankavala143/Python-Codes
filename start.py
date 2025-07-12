@@ -44,6 +44,9 @@ print(has_duplicate)
 # s = "hello world"
 # print(first_repeated_char_first_occurrence(s))
 
+# Finding the first non-repeating word in a sentence
+   
+
 # Finding the first repeated character and its second occurrence index in a string
 # def first_repeated_char(s):
 #     seen = {}
@@ -90,7 +93,4 @@ print(has_duplicate)
 # Sorting a list using sorted
 # a = [5, 2, 9, 1, 5, 6]
 # sorted_a = sorted(a)
-# print(sorted_a)   
-
-
-
+# print(sorted_a)

@@ -10,7 +10,7 @@
 #     n += 1
 a, b = map(int, input().split())
 
-# Determine the effective lower and upper bounds of the range
+# Determine the effective lower and upper bounds of the range   
 lower_bound = min(a, b)
 upper_bound = max(a, b)
 
