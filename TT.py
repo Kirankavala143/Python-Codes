@@ -247,3 +247,31 @@
 # print(bin(n)[2:])  # Output: 101
 # print(oct(n)[2:])  # Output: 0o5
 # print(hex(n)[2:])  # Output: 0x5
+
+# def fibonacci(n):
+#     if n <= 1:
+#         return n
+#     return fibonacci(n - 1) + fibonacci(n - 2)
+# print("Fibonacci series:")
+# n = int(input("Enter the number of terms: "))
+# for i in range(n):
+#     print(fibonacci(i), end=" ")
+
+# def fibonacci_iter(n):
+#     a, b = 0, 1
+#     for _ in range(n):
+#         print(a, end=" ")
+#         a, b = b, a + b
+# n = int(input("Enter the number of terms: "))
+# fibonacci_iter(n)
+
+# range from this number to this number
+def fibonacci_range(start, end):
+    a, b = 0, 1
+    while a <= end:
+        if a >= start:
+            print(a, end=' ')
+        a, b = b, a + b 
+n1 = int(input("Enter the start of the range: "))
+n2 = int(input("Enter the end of the range: "))
+fibonacci_range(n1, n2)
