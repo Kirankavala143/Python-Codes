@@ -129,3 +129,22 @@
 # n = 10
 # for i in range(n):
 #     print(fibonacci_recursive(i), end=' ')
+
+#Lambda function
+'''syntax:-
+lambda arguments:expression '''
+#Ex:-
+add = lambda a,b : a+b
+print(add(9,3)) # 12
+'''No arguments'''
+greet = lambda:"HELLO!"
+print(greet()) # HELLO!
+
+'''lambda in a map() function'''
+n = [1,2,3,4]
+sq = list(map(lambda x : x**2, n))
+print(*sq) # 1 4 9 16
+'''Convert to uppercase'''
+names = ['anu','vijju','gowthami']
+up = list(map(str.upper,names))
+print(up) #['ANU', 'VIJJU', 'GOWTHAMI']

@@ -188,6 +188,7 @@ def frequency_count(s):
                 count[i] = 1
     return count
 s = "hello world"
+
 result = frequency_count(s)
 print(result)
 

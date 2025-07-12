@@ -29,12 +29,12 @@
 # print(sum)
 
 # Factorial of a number
-def factorial(n):
-    if n == 0:    
-        return 1          
-    else:        
-        return n * factorial(n-1)
-print(factorial(5))           
+# def factorial(n):
+#     if n == 0:    
+#         return 1          
+#     else:        
+#         return n * factorial(n-1)
+# print(factorial(5))           
 
 # while loop revsere a number
 # n = int(input("Enter a number: "))
@@ -138,60 +138,91 @@ print(factorial(5))
 
 # Q: Print all the prime numbers between 2 and N 
 
-n=int(input("Enter a number: "))
-if n<2:
-    print("There are no prime numbers less than 2.")
-else:
-    for i in range(2,n):
-        if n%i==0:
-            print("n0t a prime number")
-            break
-    else:
-        print("prime number")
+# n=int(input("Enter a number: "))
+# if n<2:
+#     print("There are no prime numbers less than 2.")
+# else:
+#     for i in range(2,n):
+#         if n%i==0:
+#             print("n0t a prime number")
+#             break
+#     else:
+#         print("prime number")
 
 # Q: Print all the prime numbers between 2 and N
 
-def print_primes(N):
-    for num in range(2, N + 1):
-        is_prime = True
-        for i in range(2, int(num ** 0.5) + 1):
-            if num % i == 0:
-                is_prime = False
-                break
-        if is_prime:
-            print(num)
+# def print_primes(N):
+#     for num in range(2, N + 1):
+#         is_prime = True
+#         for i in range(2, int(num ** 0.5) + 1):
+#             if num % i == 0:
+#                 is_prime = False
+#                 break
+#         if is_prime:
+#             print(num)
 
-N = int(input("Enter a number: "))
-print_primes(N)
+# N = int(input("Enter a number: "))
+# print_primes(N)
 
 # Q: Print all the prime numbers between 2 and N using list comprehension
-def print_primes_comprehension(N):
-    primes = [num for num in range(2, N + 1) if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1))]
-    for prime in primes:
-        print(prime)
-N = int(input("Enter a number: "))
-print_primes_comprehension(N)
+# def print_primes_comprehension(N):
+#     primes = [num for num in range(2, N + 1) if all(num % i != 0 for i in range(2, int(num ** 0.5) + 1))]
+#     for prime in primes:
+#         print(prime)
+# N = int(input("Enter a number: "))
+# print_primes_comprehension(N)
 
 
 #  Print all the prime numbers between 2 and N, but stop printing when a number is divisible by the sum of its digits.
-n=int(input("Enter a number: "))
-def sum_of_digits(num):
-    return sum(int(digit) for digit in str(num))
-for i in range(2,n+1):
-    if i%sum_of_digits(i)==0:
-        break
-    else:
-        print(i)    
+# n=int(input("Enter a number: "))
+# def sum_of_digits(num):
+#     return sum(int(digit) for digit in str(num))
+# for i in range(2,n+1):
+#     if i%sum_of_digits(i)==0:
+#         break
+#     else:
+#         print(i)    
 
 
-nums = list(map(int, input().split()))
-multiples_of_3 = list(filter(lambda x: x % 3 == 0, nums))
+# nums = list(map(int, input().split()))
+# multiples_of_3 = list(filter(lambda x: x % 3 == 0, nums))
 
-if multiples_of_3:
-    print(*multiples_of_3)
-else:
-    print("No multiples of 3 found")
+# if multiples_of_3:
+#     print(*multiples_of_3)
+# else:
+#     print("No multiples of 3 found")
 
 
 
 # Q: Print a hollow diamond pattern of stars for a given odd number of rows.
+def print_hollow_diamond(n):
+    if n % 2 == 0:
+        print("Please enter an odd number.")
+        return
+
+    # Upper part
+    for i in range(n // 2 + 1):
+        for j in range(n // 2 - i):
+            print(" ", end="")
+        print("*", end="")
+        if i > 0:
+            for j in range(2 * i - 1):
+                print(" ", end="")
+            print("*")
+        else:
+            print()
+
+    # Lower part
+    for i in range(n // 2 - 1, -1, -1):
+        for j in range(n // 2 - i):
+            print(" ", end="")
+        print("*", end="")
+        if i > 0:
+            for j in range(2 * i - 1):
+                print(" ", end="")
+            print("*")
+        else:
+            print()
+n = int(input("Enter an odd number of rows: "))
+print_hollow_diamond(n)
+
