@@ -265,13 +265,26 @@
 # n = int(input("Enter the number of terms: "))
 # fibonacci_iter(n)
 
-# range from this number to this number
-def fibonacci_range(start, end):
+# sum of fibonacci_iter
+def fibonacci_sum(n):
     a, b = 0, 1
-    while a <= end:
-        if a >= start:
-            print(a, end=' ')
-        a, b = b, a + b 
-n1 = int(input("Enter the start of the range: "))
-n2 = int(input("Enter the end of the range: "))
-fibonacci_range(n1, n2)
+    sum = 0
+    for _ in range(n):
+        sum += a
+        a, b = b, a + b
+    return sum
+n = int(input("Enter the number of terms: "))
+print("Sum of Fibonacci series:", fibonacci_sum(n))
+
+# range from this number to this number
+# def fibonacci_range(start, end):
+#     a, b = 0, 1
+#     while a <= end:
+#         if a >= start:
+#             print(a, end=' ')
+#         a, b = b, a + b 
+# n1 = int(input("Enter the start of the range: "))
+# n2 = int(input("Enter the end of the range: "))
+# fibonacci_range(n1, n2)
+
+# l

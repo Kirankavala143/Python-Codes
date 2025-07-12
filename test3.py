@@ -33,6 +33,18 @@
 # exponent = int(input("Enter the exponent: "))
 # print(f"{base} raised to the power of {exponent} is: {power(base, exponent)}")
 
+
+# Recursive power function: power(a, b) = a^b
+
+# def power(a, b):
+#     if b == 0:
+#         return 1
+#     else:
+#         return a * power(a, b - 1)
+# a = int(input("Enter the base: "))
+# b = int(input("Enter the exponent: "))
+# print("Result:", power(a, b))
+
 # anothwer way to find power
 # def power(a, b):
 #     return a ** b 
