@@ -86,15 +86,46 @@
 # s = "abcaadb"
 # first_repeated_char(s)
 
-def first_repeated_char(s):
-    seen = set()  # Step 1
-    for i in range(len(s)):  # Step 2
-        if s[i] in seen:  # Step 3
-            print("First repeated character:", s[i])  # Step 4
-            print("Second occurrence at index:", i)  # Step 5
-            return  # Step 6
-        seen.add(s[i])  # Step 7
-    print("No repeated characters found.")  # Step 8
+# def first_repeated_char(s):
+#     seen = set()  # Step 1
+#     for i in range(len(s)):  # Step 2
+#         if s[i] in seen:  # Step 3
+#             print("First repeated character:", s[i])  # Step 4
+#             print("Second occurrence at index:", i)  # Step 5
+#             return  # Step 6
+#         seen.add(s[i])  # Step 7
+#     print("No repeated characters found.")  # Step 8
 
-s = "abcaadb"
-first_repeated_char(s)
+# s = "abcaadb"
+# first_repeated_char(s)
+
+# fibnacci series
+# def fibonacci(n):
+#     a, b = 0, 1
+#     for i in range(n):
+#         yield a
+#         a, b = b, a + b   
+
+# n = int(input("Enter the number of terms: "))
+# for num in fibonacci(n):
+#     print(num, end=" ")   
+
+# def fibonacci_series(n):
+#     a, b = 0, 1
+#     for _ in range(n):
+#         print(a, end=' ')
+#         a, b = b, a + b
+
+# # Example usage:
+# n= int(input("Enter the number of terms: "))
+# fibonacci_series(n)
+
+# def fibonacci_recursive(n):
+#     if n <= 1:
+#         return n
+#     return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
+
+# # Print first n Fibonacci numbers
+# n = 10
+# for i in range(n):
+#     print(fibonacci_recursive(i), end=' ')
