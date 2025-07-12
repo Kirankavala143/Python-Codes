@@ -194,35 +194,56 @@
 
 
 
-# Q: Print a hollow diamond pattern of stars for a given odd number of rows.
-def print_hollow_diamond(n):
-    if n % 2 == 0:
-        print("Please enter an odd number.")
-        return
+# # Q: Print a hollow diamond pattern of stars for a given odd number of rows.
+# def print_hollow_diamond(n):
+#     if n % 2 == 0:
+#         print("Please enter an odd number.")
+#         return
 
-    # Upper part
-    for i in range(n // 2 + 1):
-        for j in range(n // 2 - i):
-            print(" ", end="")
-        print("*", end="")
-        if i > 0:
-            for j in range(2 * i - 1):
-                print(" ", end="")
-            print("*")
-        else:
-            print()
+#     # Upper part
+#     for i in range(n // 2 + 1):
+#         for j in range(n // 2 - i):
+#             print(" ", end="")
+#         print("*", end="")
+#         if i > 0:
+#             for j in range(2 * i - 1):
+#                 print(" ", end="")
+#             print("*")
+#         else:
+#             print()
 
-    # Lower part
-    for i in range(n // 2 - 1, -1, -1):
-        for j in range(n // 2 - i):
-            print(" ", end="")
-        print("*", end="")
-        if i > 0:
-            for j in range(2 * i - 1):
-                print(" ", end="")
-            print("*")
-        else:
-            print()
-n = int(input("Enter an odd number of rows: "))
-print_hollow_diamond(n)
+#     # Lower part
+#     for i in range(n // 2 - 1, -1, -1):
+#         for j in range(n // 2 - i):
+#             print(" ", end="")
+#         print("*", end="")
+#         if i > 0:
+#             for j in range(2 * i - 1):
+#                 print(" ", end="")
+#             print("*")
+#         else:
+#             print()
+# n = int(input("Enter an odd number of rows: "))
+# print_hollow_diamond(n)
 
+
+# Write a recursive function to convert a decimal number into its binary representation without using built-in functions.
+# def decimal_to_binary(n):
+#     if n == 0:
+#         return ""
+#     else:
+#         return decimal_to_binary(n // 2) + str(n % 2)    
+# n = int(input("Enter a decimal number: "))
+# print("Binary representation:", decimal_to_binary(n))   
+
+# using built in functions to covert decimal to binary
+# n = int(input("Enter a decimal number: "))
+# print("Binary representation:", bin(n)[2:])
+# # to convert binary to decimal
+# n= input("Enter a binary number: ")
+# print("Decimal representation:", int(n, 2))
+
+# n=5
+# print(bin(n)[2:])  # Output: 101
+# print(oct(n)[2:])  # Output: 0o5
+# print(hex(n)[2:])  # Output: 0x5
