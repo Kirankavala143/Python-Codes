@@ -122,25 +122,25 @@
 # for num in fibonacci(n):
 #     print(num, end=" ")   
 
-# def fibonacci_series(n):
-#     a, b = 0, 1
-#     for _ in range(n):
-#         print(a, end=' ')
-#         a, b = b, a + b
+def fibonacci_series(n):
+    a, b = 0, 1
+    for _ in range(n):
+        print(a, end=' ')
+        a, b = b, a + b
 
-# # Example usage:
-# n= int(input("Enter the number of terms: "))
-# fibonacci_series(n)
+# Example usage:
+n= int(input("Enter the number of terms: "))
+fibonacci_series(n)
 
-# def fibonacci_recursive(n):
-#     if n <= 1:
-#         return n
-#     return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
+def fibonacci_recursive(n):
+    if n <= 1:
+        return n
+    return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
 
-# # Print first n Fibonacci numbers
-# n = 10
-# for i in range(n):
-#     print(fibonacci_recursive(i), end=' ')
+# Print first n Fibonacci numbers
+n = 10
+for i in range(n):
+    print(fibonacci_recursive(i), end=' ')
 
 #Lambda function
 '''syntax:-

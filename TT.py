@@ -248,14 +248,14 @@
 # print(oct(n)[2:])  # Output: 0o5
 # print(hex(n)[2:])  # Output: 0x5
 
-# def fibonacci(n):
-#     if n <= 1:
-#         return n
-#     return fibonacci(n - 1) + fibonacci(n - 2)
-# print("Fibonacci series:")
-# n = int(input("Enter the number of terms: "))
-# for i in range(n):
-#     print(fibonacci(i), end=" ")
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
+print("Fibonacci series:")
+n = int(input("Enter the number of terms: "))
+for i in range(n):
+    print(fibonacci(i), end=" ")
 
 # def fibonacci_iter(n):
 #     a, b = 0, 1
